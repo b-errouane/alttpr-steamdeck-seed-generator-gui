@@ -18,7 +18,7 @@ if [ -d "$repo_name" ]; then
         git stash save "Local changes stashed by installer"
     fi
 
-    git pull origin master --ff-only
+    git pull origin main --ff-only
 
     if [ -n "$(git stash list)" ]; then
         echo "Applying stashed changes..."
