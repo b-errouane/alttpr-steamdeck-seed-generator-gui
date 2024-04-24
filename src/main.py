@@ -47,6 +47,7 @@ def setup_grid(setup_root, setup_num_cols):
 
 
 root = tk.Tk()
+root.overrideredirect(True)
 root.geometry("1280x800")
 root.title("Alttp-Rando Seed Generator")
 seeds = get_seeds()
