@@ -31,8 +31,7 @@ if [ -d "$repo_name" ]; then
 else
     git clone https://github.com/b-errouane/$repo_name.git
     echo "Repository cloned."
+    cd "$repo_name"
 fi
-
-cd "$repo_name"
 
 echo "Installation/Update complete."
