@@ -29,7 +29,7 @@ if [ -d "$repo_name" ]; then
         git stash pop
     fi
 else
-    git clone https://gitlab.com/b-errouane/$repo_name.git
+    git clone https://github.com/b-errouane/$repo_name.git
     echo "Repository cloned."
 fi
 
