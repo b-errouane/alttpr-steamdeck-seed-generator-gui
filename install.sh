@@ -18,7 +18,7 @@ if [ -d "$repo_name" ]; then
         git stash save "Local changes stashed by installer"
     fi
 
-    if git pull origin master --ff-only || [ $? -eq 1 ]; then
+    if git pull origin main --ff-only || [ $? -eq 1 ]; then
         echo "Repository updated."
     else
         echo "No updates available."
